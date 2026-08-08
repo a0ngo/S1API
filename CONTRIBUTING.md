@@ -8,6 +8,39 @@ Please read over the below in full to help you get started and set expectations 
 - Do **NOT** alter my GitHub actions unless you have a good reason. 
   I will close your PR and ban you from the project if malicious intent is found.
 
+## Dependencies
+1. [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+2. [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+3. [MelonLoader](https://melonwiki.xyz/#/README?id=requirements)
+
+## How to Setup the Project
+Before building anything, you will need to setup the project. For the sake of simplicity we will be using the following folder structure:
+```
+ScheduleIAPIContrib/
+├── S1-Default/
+├── S1-Alternate/
+└── S1API/
+```
+For `S1-Default` (IL2CPP):
+1. In steam, right-click on Schedule I
+2. Select `Properties`
+3. Go to `Game Versions & Betas` on the left-hand menu
+4. Select `Public Version`
+5. Once installed `MelonLoader`, run it and send it to install in the steam path (following their instructions)
+6. If exited, repeat steps 1&2, then select `Installed Files`
+7. Click `Browse`
+8. Copy all the contents to the `S1-Default` Folder
+
+For `S1-Alternate` (Mono):
+1. In steam, right-click on Schedule I
+2. Select `Properties`
+3. Go to `Game Versions & Betas` on the left-hand menu
+4. Select `alternate`
+5. From the left-hand menu, select `Installed Files`
+6. Click `Browse`
+7. Copy all the contents to the `S1-Alternate` Folder
+8. Run `MelonLoader` by manually adding the folder for Schedule I to `S1-Alternate`
+
 ## How to Build the Project
 1. Clone the project using `git clone https://github.com/ifBars/S1API.git`
 2. Copy the `example.build.props` file to a new file named `local.build.props`. This file located in the base repository directory.
