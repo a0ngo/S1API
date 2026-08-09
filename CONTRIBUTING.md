@@ -9,20 +9,20 @@ Please read over the below in full to help you get started and set expectations 
   I will close your PR and ban you from the project if malicious intent is found.
 
 ## Prerequisites
-Install:
-1. [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-2. [MelonLoader](https://melonwiki.xyz/#/README?id=requirements)
+S1API is available to mod developers of all experience levels, but contributing
+game-facing changes assumes working familiarity with Schedule I mod development
+across both the public IL2CPP and alternate Mono branches. If you are new to
+Schedule I modding, start with the
+[Schedule I Modding Wiki](https://s1modding.github.io/docs/moddevs/) and build a
+mod before proposing game-facing changes to S1API.
 
-How to create game copies:
-1. In steam, right-click on Schedule I
-2. Select `Properties`
-3. Go to `Game Versions & Betas` on the left-hand menu
-4. Select `Public Version` for IL2CPP and `alternate` for Mono
-5. Once installed `MelonLoader`, run it and send it to install in the steam path (following their instructions)
-6. Run the game and let MelonLoader create all files required
-7. If exited, repeat steps 1&2, then select `Installed Files`
-8. Click `Browse`
-9. Copy all the contents the desired folder
+Before building S1API:
+
+1. Install the [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0).
+2. Prepare working MelonLoader environments for the public IL2CPP and alternate
+   Mono branches.
+3. Configure both environments in `local.build.props` using
+   `example.build.props` as the template.
 
 ## How to Build the Project
 1. Clone the project using `git clone https://github.com/ifBars/S1API.git`
